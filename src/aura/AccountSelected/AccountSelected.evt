@@ -1,0 +1,8 @@
+<!--
+ - Created by adam on 23.02.18.
+ -->
+
+<aura:event type="APPLICATION">
+    <aura:attribute name="account" Type="Account"/>
+</aura:event>
+

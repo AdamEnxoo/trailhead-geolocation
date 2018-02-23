@@ -3,5 +3,5 @@
  -->
 
 <aura:application description="AccountLocatorApp">
-    <c:AccountLocator/>
+    <c:AccountLocator />
 </aura:application>

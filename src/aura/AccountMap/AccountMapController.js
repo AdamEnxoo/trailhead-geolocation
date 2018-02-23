@@ -31,4 +31,3 @@
         map.panTo([account.Location__Latitude__s, account.Location__Longitude__s]);
     }
 })
-

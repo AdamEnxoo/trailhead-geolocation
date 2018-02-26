@@ -1,0 +1,25 @@
+Andels: 
+Latitude: 51.778612 
+Longitude: 19.448542
+
+Hilton Double Tree 
+Latitude: 51.757409 
+Longitude: 19.443550
+
+Grand Hotel 
+Latidude: 51.768925 
+Longitude: 19.456774
+
+Required JS Modification:
+AccountMapController.js, function jsLoaded:
+
+    jsLoaded: function(component, event, helper) {
+        var map = L.map('map', {zoomControl: false, tap: false}).setView([51.767313, 19.453964], 13);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+            {
+                attribution: 'Tiles © Esri'
+            }).addTo(map);
+        component.set("v.map", map);
+    },
+    
+    
